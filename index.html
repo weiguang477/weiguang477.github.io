@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张天赐 | AI产品经理作品集</title>
+  <meta name="description" content="张天赐 - AI产品经理个人作品集，展示教育背景、实习经历、个人实践与技能爱好。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased text-slate-800">
+  <!-- Mesh Gradient Background -->
+  <div class="mesh-bg fixed inset-0 -z-10"></div>
+  <div class="noise-overlay fixed inset-0 -z-10 opacity-40 pointer-events-none"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-6xl">
+    <div class="glass-nav rounded-full px-4 py-3 relative flex items-center justify-center shadow-lg shadow-blue-900/5">
+      <div class="hidden md:flex items-center gap-1">
+        <a href="#about" class="nav-link px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-white/40 transition-all">关于我</a>
+        <a href="#education" class="nav-link px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-white/40 transition-all">教育背景</a>
+        <a href="#experience" class="nav-link px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-white/40 transition-all">实习经历</a>
+        <a href="#works" class="nav-link px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-white/40 transition-all">个人实践</a>
+        <a href="#skills" class="nav-link px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-white/40 transition-all">技能与爱好</a>
+        <a href="#contact" class="nav-link px-4 py-2 rounded-full text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-white/40 transition-all">联系我</a>
+      </div>
+      <div class="md:hidden h-10"></div>
+
+      <div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-3">
+        <a href="张天赐_个人简历.pdf" download class="hidden sm:flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-full text-sm font-medium hover:bg-slate-800 transition-colors shadow-lg shadow-slate-900/20">
+          <i class="fa-solid fa-download text-xs"></i> 简历
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden w-10 h-10 rounded-full bg-white/40 flex items-center justify-center text-slate-700 hover:bg-white/60 transition-colors">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden mt-2 glass-card rounded-3xl p-4 shadow-xl">
+      <div class="flex flex-col gap-2">
+        <a href="#about" class="mobile-nav-link px-4 py-3 rounded-2xl text-slate-700 hover:bg-white/40 font-medium">关于我</a>
+        <a href="#education" class="mobile-nav-link px-4 py-3 rounded-2xl text-slate-700 hover:bg-white/40 font-medium">教育背景</a>
+        <a href="#experience" class="mobile-nav-link px-4 py-3 rounded-2xl text-slate-700 hover:bg-white/40 font-medium">实习经历</a>
+        <a href="#works" class="mobile-nav-link px-4 py-3 rounded-2xl text-slate-700 hover:bg-white/40 font-medium">个人实践</a>
+        <a href="#skills" class="mobile-nav-link px-4 py-3 rounded-2xl text-slate-700 hover:bg-white/40 font-medium">技能与爱好</a>
+        <a href="#contact" class="mobile-nav-link px-4 py-3 rounded-2xl text-slate-700 hover:bg-white/40 font-medium">联系我</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- About Me / Hero Section -->
+    <section id="about" class="min-h-screen flex items-center pt-28 pb-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto w-full">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div class="order-2 lg:order-1 space-y-8">
+            <div class="space-y-4">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-badge text-sm font-medium text-blue-700">
+                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                HELLO / 你好
+              </div>
+              <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 leading-[1.1] tracking-tight">
+                Hi,<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-600">我是张天赐</span>
+              </h1>
+              <p class="text-2xl sm:text-3xl font-semibold text-slate-700">
+                AI 产品经理 / Product Manager
+              </p>
+              <div class="space-y-3 max-w-xl">
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                  25 岁，目前就读于中央财经大学创新发展学院（经济学硕士，2027 年毕业），扎实的经济学训练让我擅长用逻辑维拆解复杂业务问题。
+                </p>
+                <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                  深耕大模型应用落地，专注于 Agent/Workflow、Skill、Prompt 工程与产品平台化。兼具技术理解力与用户体验敏感度，善于从复杂业务中抽象产品方案并推动数据闭环迭代。
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-2 rounded-full bg-white/60 border border-white/60 text-sm font-medium text-slate-700 shadow-sm">Agent 设计</span>
+              <span class="px-4 py-2 rounded-full bg-white/60 border border-white/60 text-sm font-medium text-slate-700 shadow-sm">Workflow</span>
+              <span class="px-4 py-2 rounded-full bg-white/60 border border-white/60 text-sm font-medium text-slate-700 shadow-sm">Skill</span>
+              <span class="px-4 py-2 rounded-full bg-white/60 border border-white/60 text-sm font-medium text-slate-700 shadow-sm">Prompt 工程</span>
+              <span class="px-4 py-2 rounded-full bg-white/60 border border-white/60 text-sm font-medium text-slate-700 shadow-sm">数据闭环</span>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/20 hover:-translate-y-0.5">
+                联系我 <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+              <a href="#works" class="inline-flex items-center gap-2 px-8 py-4 glass-card text-slate-800 rounded-full font-semibold hover:bg-white/60 transition-all hover:-translate-y-0.5">
+                查看作品
+              </a>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2 relative">
+            <div class="relative mx-auto max-w-md">
+              <!-- Decorative soft blobs behind the photo -->
+              <div class="absolute top-6 -left-8 w-44 h-44 rounded-full bg-blue-300/40 blur-2xl"></div>
+              <div class="absolute bottom-20 -right-6 w-52 h-52 rounded-full bg-purple-300/40 blur-2xl"></div>
+              <div class="absolute top-1/3 right-2 w-24 h-24 rounded-full bg-pink-200/50 blur-xl"></div>
+              <div class="absolute bottom-4 left-10 w-20 h-20 rounded-full bg-sky-200/50 blur-xl"></div>
+              <!-- Borderless feathered photo -->
+              <div class="relative hero-photo-fade aspect-[4/5]">
+                <img src="images/hero-portrait.jpg" alt="张天赐" class="w-full h-full object-cover">
+              </div>
+              <!-- NOW badge -->
+              <div class="absolute bottom-10 -right-2 sm:-right-6 glass-card rounded-2xl p-4 shadow-xl max-w-[180px]">
+                <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">NOW</div>
+                <div class="text-sm font-bold text-slate-900">AI × 用户决策</div>
+                <div class="text-xs text-slate-600 mt-1">正在探索智能体新机遇</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Stats Strip -->
+        <div class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="text-center p-5 rounded-2xl glass-card shadow-lg">
+            <div class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">2+</div>
+            <div class="text-xs text-slate-600 mt-1 font-medium">大厂实习经历</div>
+          </div>
+          <div class="text-center p-5 rounded-2xl glass-card shadow-lg">
+            <div class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">3+</div>
+            <div class="text-xs text-slate-600 mt-1 font-medium">实习所获荣誉</div>
+          </div>
+          <div class="text-center p-5 rounded-2xl glass-card shadow-lg">
+            <div class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">20+</div>
+            <div class="text-xs text-slate-600 mt-1 font-medium">闭环产品需求</div>
+          </div>
+          <div class="text-center p-5 rounded-2xl glass-card shadow-lg">
+            <div class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">5+</div>
+            <div class="text-xs text-slate-600 mt-1 font-medium">个人AI实践</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <div class="text-sm font-semibold tracking-widest text-blue-600 uppercase mb-3">02 / LEARNING PATH</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">我的学习坐标</h2>
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative">
+          <!-- Center line (desktop) -->
+          <div class="hidden md:block absolute left-1/2 top-2 bottom-2 w-0.5 -translate-x-1/2 bg-gradient-to-b from-blue-300 via-indigo-300 to-purple-300 rounded-full"></div>
+          <!-- Left line (mobile) -->
+          <div class="md:hidden absolute left-7 top-2 bottom-2 w-0.5 bg-gradient-to-b from-blue-300 via-indigo-300 to-purple-300 rounded-full"></div>
+
+          <!-- Item 1: 辽宁大学 · 本科 -->
+          <div class="relative mb-8 md:mb-12">
+            <!-- Timeline node: LNU badge -->
+            <div class="absolute left-7 md:left-1/2 -translate-x-1/2 top-4 md:top-1/2 md:-translate-y-1/2 z-10">
+              <div class="w-14 h-14 md:w-[4.5rem] md:h-[4.5rem] rounded-full bg-white shadow-xl ring-4 ring-blue-100/80 flex items-center justify-center overflow-hidden">
+                <img src="images/edu-lnu-badge.jpg" alt="辽宁大学校徽" class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div class="md:grid md:grid-cols-2 md:gap-20 items-center">
+              <!-- Card (left on desktop) -->
+              <div class="ml-20 md:ml-0 glass-card rounded-[2rem] overflow-hidden shadow-xl group hover:-translate-y-1 transition-transform duration-300">
+                <div class="relative h-44 overflow-hidden">
+                  <img src="images/edu-lnu-gate.jpg" alt="辽宁大学校门" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
+                  <span class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-white/90 backdrop-blur text-slate-800 text-xs font-bold shadow">2020.09 - 2024.06</span>
+                  <div class="absolute bottom-4 left-4 flex gap-2">
+                    <span class="px-3 py-1 rounded-full bg-blue-600/90 backdrop-blur text-white text-xs font-bold">本科</span>
+                    <span class="px-3 py-1 rounded-full bg-white/90 backdrop-blur text-blue-700 text-xs font-bold">211 院校</span>
+                  </div>
+                </div>
+                <div class="p-6 sm:p-8">
+                  <h3 class="text-2xl font-bold text-slate-900 mb-1">辽宁大学</h3>
+                  <div class="text-blue-700 font-semibold mb-3">经济学 · 学士 · 经济学院</div>
+                  <p class="text-slate-600 text-sm leading-relaxed">
+                    系统学习微观/宏观经济学、高等数学、统计学、计量经济学与金融学，建立了扎实的经济学直觉与逻辑分析能力。
+                  </p>
+                </div>
+              </div>
+              <!-- Right side label (desktop) -->
+              <div class="hidden md:flex flex-col items-start justify-center">
+                <div class="text-sm font-semibold tracking-widest text-blue-500 uppercase mb-2">STAGE 01</div>
+                <div class="text-2xl font-bold text-slate-400">本科阶段</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: 中央财经大学 · 硕士 -->
+          <div class="relative">
+            <!-- Timeline node: CUFE badge -->
+            <div class="absolute left-7 md:left-1/2 -translate-x-1/2 top-4 md:top-1/2 md:-translate-y-1/2 z-10">
+              <div class="w-14 h-14 md:w-[4.5rem] md:h-[4.5rem] rounded-full bg-white shadow-xl ring-4 ring-indigo-100/80 flex items-center justify-center overflow-hidden p-1.5">
+                <img src="images/edu-cufe-badge.png" alt="中央财经大学校徽" class="w-full h-full object-contain">
+              </div>
+            </div>
+
+            <div class="md:grid md:grid-cols-2 md:gap-20 items-center">
+              <!-- Left side label (desktop) -->
+              <div class="hidden md:flex flex-col items-end justify-center text-right">
+                <div class="text-sm font-semibold tracking-widest text-indigo-500 uppercase mb-2">STAGE 02</div>
+                <div class="text-2xl font-bold text-slate-400">硕士阶段</div>
+              </div>
+              <!-- Card (right on desktop) -->
+              <div class="ml-20 md:ml-0 glass-card rounded-[2rem] overflow-hidden shadow-xl group hover:-translate-y-1 transition-transform duration-300">
+                <div class="relative h-44 overflow-hidden">
+                  <img src="images/edu-cufe-campus.jpg" alt="中央财经大学" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>
+                  <div class="absolute top-4 left-4 flex items-center gap-2">
+                    <span class="px-3 py-1.5 rounded-full bg-white/90 backdrop-blur text-slate-800 text-xs font-bold shadow">2024.09 - 2027.06</span>
+                    <span class="px-3 py-1.5 rounded-full bg-emerald-500/90 backdrop-blur text-white text-xs font-bold flex items-center gap-1.5">
+                      <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>在读
+                    </span>
+                  </div>
+                  <div class="absolute bottom-4 left-4 flex gap-2">
+                    <span class="px-3 py-1 rounded-full bg-indigo-500/90 backdrop-blur text-white text-xs font-bold">硕士</span>
+                    <span class="px-3 py-1 rounded-full bg-white/90 backdrop-blur text-indigo-700 text-xs font-bold">双一流学科</span>
+                  </div>
+                </div>
+                <div class="p-6 sm:p-8">
+                  <h3 class="text-2xl font-bold text-slate-900 mb-1">中央财经大学</h3>
+                  <div class="text-indigo-700 font-semibold mb-3">经济学 · 硕士 · 创新发展学院</div>
+                  <p class="text-slate-600 text-sm leading-relaxed">
+                    专注于经济学理论学习之外，自学计算机基础知识和大模型相关技术，为模型应用落地和 AI 产品建设打下坚实基础。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <div class="text-sm font-semibold tracking-widest text-blue-600 uppercase mb-3">03 / THE PRACTITIONER</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">我在真实现场做过什么</h2>
+        </div>
+
+        <!-- Dual-sided Timeline -->
+        <div class="relative">
+          <!-- Center line (desktop) -->
+          <div class="hidden md:block absolute left-1/2 top-2 bottom-2 w-0.5 -translate-x-1/2 bg-gradient-to-b from-blue-300 via-indigo-300 to-purple-300 rounded-full"></div>
+          <!-- Left line (mobile) -->
+          <div class="md:hidden absolute left-7 top-2 bottom-2 w-0.5 bg-gradient-to-b from-blue-300 via-indigo-300 to-purple-300 rounded-full"></div>
+
+          <!-- Item 1: 京东 -->
+          <div class="relative mb-12 md:mb-16">
+            <!-- Timeline node -->
+            <div class="absolute left-7 md:left-1/2 -translate-x-1/2 top-6 md:top-1/2 md:-translate-y-1/2 z-10">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white shadow-xl ring-4 ring-white/80 overflow-hidden">
+                <img src="images/logo-jd.jpg" alt="京东" class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div class="md:grid md:grid-cols-2 md:gap-16 lg:gap-20 items-center">
+              <!-- Text card (left on desktop) -->
+              <div class="ml-20 md:ml-0 glass-card rounded-[2rem] p-6 sm:p-8 shadow-xl">
+                <div class="flex items-center gap-3 sm:gap-4 mb-4 flex-wrap">
+                  <div class="w-12 h-12 shrink-0 rounded-xl bg-white shadow-lg overflow-hidden">
+                    <img src="images/logo-jd.jpg" alt="京东" class="w-full h-full object-cover">
+                  </div>
+                  <div class="flex-1 min-w-0 flex items-baseline gap-2 flex-wrap">
+                    <h3 class="text-xl font-bold text-slate-900">京东</h3>
+                    <span class="text-sm font-semibold text-slate-500">产品经理</span>
+                    <span class="text-sm text-slate-400">·</span>
+                    <span class="text-sm text-slate-500">金融科技事业群</span>
+                  </div>
+                  <span class="shrink-0 px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-xs font-bold">2025.11 - 2026.06</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed mb-5">
+                  打造大模型质检和智能陪练 Agent，推动金融电销平台智能化转型。
+                </p>
+                <div class="space-y-3">
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center text-blue-700 text-xs"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">Prompt 工程与平台化：</strong>质检业务覆盖率 20%→100%，Precision 稳定至 85%，年节省首检人力成本约 774w</div>
+                  </div>
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-purple-100 flex items-center justify-center text-purple-700 text-xs"><i class="fa-solid fa-rotate"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">模型微调与数据闭环：</strong>LoRA 微调 + 标注体系建设，Precision 92% / Recall 95%，人工复检工时占比 50%→15%</div>
+                  </div>
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-orange-100 flex items-center justify-center text-orange-700 text-xs"><i class="fa-solid fa-graduation-cap"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">智能陪练 Agent：</strong>从 0 到 1 分层陪练 + 剧本状态机，新人成长周期缩短 2.5 天/人，年节省培训成本约 420w</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Photo stack (right on desktop) -->
+              <div class="ml-20 md:ml-0 mt-8 md:mt-0">
+                <div class="relative h-72 sm:h-80 cursor-pointer group" onclick="openGallery('jd')">
+                  <div class="absolute inset-x-3 inset-y-0 rotate-[7deg] translate-x-4 -translate-y-1.5 rounded-2xl shadow-lg overflow-hidden opacity-90 group-hover:rotate-[10deg] group-hover:translate-x-6 transition-transform duration-500">
+                    <img src="images/work-jd-award.jpg" alt="AI卓越项目奖" class="w-full h-full object-cover">
+                  </div>
+                  <div class="absolute inset-x-3 inset-y-0 rotate-[-6deg] -translate-x-4 translate-y-1.5 rounded-2xl shadow-lg overflow-hidden group-hover:rotate-[-9deg] group-hover:-translate-x-6 transition-transform duration-500">
+                    <img src="images/work-jd-team.jpg" alt="京东团队合影" class="w-full h-full object-cover">
+                  </div>
+                  <div class="absolute inset-x-3 inset-y-0 rounded-2xl shadow-xl overflow-hidden bg-white group-hover:-translate-y-1.5 transition-transform duration-500">
+                    <img src="images/work-jd-recognition.jpg" alt="同事感谢信" class="w-full h-full object-contain">
+                  </div>
+                  <div class="absolute inset-x-3 inset-y-0 rounded-2xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
+                    <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 py-2.5 rounded-full bg-white/95 text-slate-800 text-sm font-bold shadow-lg flex items-center gap-2">
+                      <i class="fa-solid fa-images"></i> 展开 3 张
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: 百度 -->
+          <div class="relative">
+            <!-- Timeline node -->
+            <div class="absolute left-7 md:left-1/2 -translate-x-1/2 top-6 md:top-1/2 md:-translate-y-1/2 z-10">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white shadow-xl ring-4 ring-white/80 overflow-hidden flex items-center justify-center p-1">
+                <img src="images/logo-baidu-paw.jpg" alt="百度" class="w-full h-full object-contain">
+              </div>
+            </div>
+
+            <div class="md:grid md:grid-cols-[1fr_1.12fr] md:gap-16 items-center">
+              <!-- Text card (right on desktop, first on mobile) -->
+              <div class="ml-20 md:ml-0 glass-card rounded-[2rem] p-6 sm:p-8 shadow-xl md:order-2">
+                <div class="flex items-center gap-2.5 sm:gap-3 mb-4 flex-wrap lg:flex-nowrap">
+                  <div class="w-12 h-12 shrink-0 rounded-xl bg-white shadow-lg overflow-hidden flex items-center justify-center p-1">
+                    <img src="images/logo-baidu-paw.jpg" alt="百度" class="w-full h-full object-contain">
+                  </div>
+                  <div class="flex-1 min-w-0 flex items-baseline gap-1.5 flex-wrap lg:flex-nowrap">
+                    <h3 class="text-xl font-bold text-slate-900">百度</h3>
+                    <span class="text-sm font-semibold text-slate-500 whitespace-nowrap">AI 产品经理</span>
+                    <span class="text-sm text-slate-400">·</span>
+                    <span class="text-xs text-slate-500 whitespace-nowrap">智能云千帆大模型平台</span>
+                  </div>
+                  <span class="shrink-0 px-2.5 py-1 rounded-full bg-blue-100 text-blue-700 text-[11px] font-bold whitespace-nowrap">2025.06 - 2025.11</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed mb-5">
+                  深度参与千帆 AppBuilder 平台工作流 Agent/组件建设，为 Agent 平台打造高可用原子能力。
+                </p>
+                <div class="space-y-3">
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-indigo-100 flex items-center justify-center text-indigo-700 text-xs"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">竞品调研：</strong>多维调研 Coze / Dify / 阿里百炼 / n8n，输出多版竞品调研报告</div>
+                  </div>
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-cyan-100 flex items-center justify-center text-cyan-700 text-xs"><i class="fa-solid fa-lightbulb"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">需求洞察：</strong>沉淀核心需求 25+ 条，多角度抽象平台公有能力</div>
+                  </div>
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-blue-100 flex items-center justify-center text-blue-700 text-xs"><i class="fa-solid fa-cubes"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">原子能力建设：</strong>独立闭环 10+ 项 P0/P1 级需求，Q3 工作流日均调用量环比 +338%</div>
+                  </div>
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 text-xs"><i class="fa-solid fa-flask"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">Agent 评测：</strong>构建通用评测集，多维评估 Manus、扣子空间、ChatGPT Agent</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Photo stack (left on desktop) -->
+              <div class="ml-20 md:ml-0 mt-8 md:mt-0 md:order-1">
+                <div class="relative h-72 sm:h-80 cursor-pointer group" onclick="openGallery('baidu')">
+                  <div class="absolute inset-x-3 inset-y-0 rotate-[-7deg] -translate-x-4 -translate-y-1.5 rounded-2xl shadow-lg overflow-hidden opacity-90 group-hover:rotate-[-10deg] group-hover:-translate-x-6 transition-transform duration-500">
+                    <img src="images/work-baidu-presentation.jpg" alt="秒哒时间大联播" class="w-full h-full object-cover">
+                  </div>
+                  <div class="absolute inset-x-3 inset-y-0 rotate-[6deg] translate-x-4 translate-y-1.5 rounded-2xl shadow-lg overflow-hidden group-hover:rotate-[9deg] group-hover:translate-x-6 transition-transform duration-500">
+                    <img src="images/work-baidu-conference.jpg" alt="Agent应用花园" class="w-full h-full object-cover">
+                  </div>
+                  <div class="absolute inset-x-3 inset-y-0 rounded-2xl shadow-xl overflow-hidden group-hover:-translate-y-1.5 transition-transform duration-500">
+                    <img src="images/work-baidu-badge.jpg" alt="百度云智大会参会证" class="w-full h-full object-cover">
+                  </div>
+                  <div class="absolute inset-x-3 inset-y-0 rounded-2xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
+                    <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 py-2.5 rounded-full bg-white/95 text-slate-800 text-sm font-bold shadow-lg flex items-center gap-2">
+                      <i class="fa-solid fa-images"></i> 展开 3 张
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Works Section -->
+    <section id="works" class="py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <div class="text-sm font-semibold tracking-widest text-blue-600 uppercase mb-3">04 / PRACTICE</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">个人实践</h2>
+        </div>
+
+        <div class="glass-card rounded-[2.5rem] p-8 sm:p-10 shadow-xl mb-12">
+          <div class="flex flex-col lg:flex-row gap-10 items-center">
+            <div class="lg:w-2/5 space-y-6">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">
+                <i class="fa-solid fa-mobile-screen"></i> 微信小程序
+              </div>
+              <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">OfferYo</h3>
+              <div class="space-y-4">
+                <p class="text-slate-600 leading-relaxed">
+                  一款面向实习/校招/社招的求职记录、进度管理、复盘查看的小程序，专注于解决海量投递产生的重复性记录、多渠道投递后进度难以便捷性查看、AI 生成笔面试建议需频繁上传个人简历和岗位 JD 的效率痛点。
+                </p>
+                <p class="text-slate-600 leading-relaxed">
+                  通过 vibe coding 独立完成产品设计、前端开发与数据逻辑，帮助用户记录投递（LLM 解析、Web 端插件同步）、安排面试日程、复盘高频问题，并提供基于匿名分享的岗位漏斗数据参考，后续计划加入基于用户简历和已有投递，生成岗位专属笔面试建议等。
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 rounded-2xl bg-white/50 border border-white/60">
+                  <div class="text-xl font-black text-blue-700">7+</div>
+                  <div class="text-xs text-slate-600">核心功能模块</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/50 border border-white/60">
+                  <div class="text-xl font-black text-blue-700">AI</div>
+                  <div class="text-xs text-slate-600">一键提取岗位信息、生成岗位专属笔面试建议</div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-white/60 text-xs font-medium text-slate-700">求职管理</span>
+                <span class="px-3 py-1 rounded-full bg-white/60 text-xs font-medium text-slate-700">日程提醒</span>
+                <span class="px-3 py-1 rounded-full bg-white/60 text-xs font-medium text-slate-700">数据复盘</span>
+                <span class="px-3 py-1 rounded-full bg-white/60 text-xs font-medium text-slate-700">社区分享</span>
+              </div>
+            </div>
+
+            <div class="lg:w-3/5 w-full lg:mt-12">
+              <!-- Fan stack: each card peeks out visibly -->
+              <div class="relative h-[360px] sm:h-[420px]">
+                <div class="absolute w-[21%] aspect-[9/19] bg-white p-1.5 rounded-xl shadow-lg origin-bottom" style="left:1%; top:30px; transform: rotate(-14deg); z-index:1;">
+                  <img src="images/project-offeryo-form.jpg" alt="智能添加投递" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="absolute w-[21%] aspect-[9/19] bg-white p-1.5 rounded-xl shadow-lg origin-bottom" style="left:14%; top:16px; transform: rotate(-9deg); z-index:2;">
+                  <img src="images/project-offeryo-list.jpg" alt="投递列表" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="absolute w-[21%] aspect-[9/19] bg-white p-1.5 rounded-xl shadow-lg origin-bottom" style="left:27%; top:6px; transform: rotate(-4deg); z-index:3;">
+                  <img src="images/project-offeryo-calendar.jpg" alt="日程安排" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="absolute w-[21%] aspect-[9/19] bg-white p-1.5 rounded-xl shadow-xl origin-bottom" style="left:40%; top:0; transform: rotate(0deg); z-index:4;">
+                  <img src="images/project-offeryo-home.jpg" alt="OfferYo 首页" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="absolute w-[21%] aspect-[9/19] bg-white p-1.5 rounded-xl shadow-lg origin-bottom" style="left:53%; top:6px; transform: rotate(4deg); z-index:3;">
+                  <img src="images/project-offeryo-detail.jpg" alt="投递详情" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="absolute w-[21%] aspect-[9/19] bg-white p-1.5 rounded-xl shadow-lg origin-bottom" style="left:66%; top:16px; transform: rotate(9deg); z-index:2;">
+                  <img src="images/project-offeryo-community.jpg" alt="岗位漏斗" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <div class="absolute w-[21%] aspect-[9/19] bg-white p-1.5 rounded-xl shadow-lg origin-bottom" style="left:79%; top:30px; transform: rotate(14deg); z-index:1;">
+                  <img src="images/project-offeryo-profile.jpg" alt="我的简历" class="w-full h-full object-cover rounded-lg">
+                </div>
+              </div>
+              <div class="mt-5 px-1 text-center">
+                <span class="text-xs font-semibold tracking-widest text-slate-500 uppercase">OfferYo · 界面预览</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 glass-card rounded-[2rem] p-8 shadow-lg">
+          <h3 class="text-xl font-bold text-slate-900 mb-4">更多 AI 实践</h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-4 rounded-2xl bg-white/40 border border-white/60">
+              <i class="fa-solid fa-puzzle-piece text-blue-600 text-xl mb-3"></i>
+              <div class="font-bold text-slate-900 text-sm">浏览器插件</div>
+              <div class="text-xs text-slate-600 mt-1">提升日常研究效率</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/40 border border-white/60">
+              <i class="fa-solid fa-laptop-code text-purple-600 text-xl mb-3"></i>
+              <div class="font-bold text-slate-900 text-sm">个人网页制作 Skill</div>
+              <div class="text-xs text-slate-600 mt-1">这个网页就是它的作品</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/40 border border-white/60">
+              <i class="fa-solid fa-diagram-project text-cyan-600 text-xl mb-3"></i>
+              <div class="font-bold text-slate-900 text-sm">工作流 Agent</div>
+              <div class="text-xs text-slate-600 mt-1">多个自动化工作流搭建</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/40 border border-white/60">
+              <i class="fa-brands fa-android text-emerald-600 text-xl mb-3"></i>
+              <div class="font-bold text-slate-900 text-sm">AI 应用探索</div>
+              <div class="text-xs text-slate-600 mt-1">Claude / Godex / Coze 重度用户</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Hobbies Section -->
+    <section id="skills" class="py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <div class="text-sm font-semibold tracking-widest text-blue-600 uppercase mb-3">05 / SKILLS & LIFE</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">随机抽取一张我的技能卡</h2>
+        </div>
+
+        <!-- Card Draw Game -->
+        <div class="glass-card rounded-[2.5rem] p-8 sm:p-10 shadow-xl mb-12 relative overflow-hidden">
+          <!-- Soft mesh-gradient ambience -->
+          <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-sky-200/50 blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-28 -left-20 w-96 h-96 rounded-full bg-pink-200/40 blur-3xl pointer-events-none"></div>
+          <div class="absolute top-1/4 left-1/3 w-64 h-64 rounded-full bg-purple-200/30 blur-3xl pointer-events-none"></div>
+
+          <div class="relative z-10 flex flex-col lg:flex-row gap-10 lg:gap-12 items-center">
+            <!-- 自我评价 (left) -->
+            <div class="order-2 lg:order-1 lg:w-[37%] w-full">
+              <div class="text-[11px] font-semibold tracking-[0.25em] text-blue-600 uppercase mb-3">SELF EVALUATION</div>
+              <h3 class="text-2xl font-bold text-slate-900 mb-6">自我评价</h3>
+              <div class="space-y-5">
+                <div class="flex gap-3.5">
+                  <span class="w-9 h-9 shrink-0 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 text-sm"><i class="fa-solid fa-shield-halved"></i></span>
+                  <p class="text-sm text-slate-600 leading-relaxed"><strong class="text-slate-900">责任心强、做事有条理。</strong>独立闭环 P0/P1 级需求，习惯用数据与效果说话，对交付质量有较高自我要求。</p>
+                </div>
+                <div class="flex gap-3.5">
+                  <span class="w-9 h-9 shrink-0 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600 text-sm"><i class="fa-solid fa-lightbulb"></i></span>
+                  <p class="text-sm text-slate-600 leading-relaxed"><strong class="text-slate-900">好奇心驱动。</strong>对 AI 产品与技术保持高度敏感，乐于尝试新工具、新工作流，并快速转化为可落地的能力。</p>
+                </div>
+                <div class="flex gap-3.5">
+                  <span class="w-9 h-9 shrink-0 rounded-xl bg-pink-100 flex items-center justify-center text-pink-600 text-sm"><i class="fa-solid fa-gem"></i></span>
+                  <p class="text-sm text-slate-600 leading-relaxed"><strong class="text-slate-900">有自己的审美。</strong>无论是产品界面还是生活方式，都追求简洁、有序与美感，相信好的体验藏在细节里。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Game (right) -->
+            <div class="order-1 lg:order-2 lg:w-[63%] w-full flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-14">
+              <!-- Deck -->
+              <div class="flex flex-col items-center shrink-0">
+                <div class="relative w-36 h-44 mb-6 select-none" id="card-deck">
+                  <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#EFF6FC] to-[#E3F0FA] rotate-[9deg] opacity-70 shadow-lg"></div>
+                  <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#E3F0FA] to-[#D3E7F7] rotate-[-7deg] opacity-85 shadow-lg"></div>
+                  <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#CDE3F6] via-[#BBD9F2] to-[#A9CDEF] shadow-2xl flex flex-col items-center justify-center text-slate-800 transition-transform duration-500" id="deck-top-card">
+                    <div class="absolute top-3 left-3 text-slate-500/60 text-[10px]"><i class="fa-solid fa-star"></i></div>
+                    <div class="absolute bottom-3 right-3 text-slate-500/60 text-[10px]"><i class="fa-solid fa-star"></i></div>
+                    <div class="w-11 h-11 rounded-full border-2 border-slate-600/30 flex items-center justify-center font-bold text-sm mb-3">TC</div>
+                    <div class="tracking-[0.3em] text-xs font-bold">MY SKILLS</div>
+                  </div>
+                </div>
+                <div class="text-sm text-slate-500 mb-4">牌库共有 <span class="font-bold text-slate-700">5</span> 张技能卡</div>
+                <button id="draw-btn" class="inline-flex items-center gap-2 px-7 py-3.5 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all shadow-xl shadow-slate-900/20 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-60 text-sm">
+                  随机抽一张 <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </button>
+              </div>
+
+              <!-- Flip Card -->
+              <div class="flex flex-col items-center shrink-0">
+                <div class="flip-card w-[290px] sm:w-[330px] aspect-[3/4] cursor-pointer" id="flip-card">
+                  <div class="flip-card-inner">
+                    <!-- Front: orbital visual -->
+                    <div class="flip-card-face relative overflow-hidden bg-white/85 backdrop-blur border border-white/70 rounded-[2rem] p-6 shadow-xl flex flex-col">
+                      <div class="flex justify-between text-[11px] tracking-[0.2em] text-slate-400 uppercase font-semibold">
+                        <span id="card-cat">AI NATIVE</span>
+                        <span id="card-type">技能</span>
+                      </div>
+                      <div class="flex-1 flex flex-col items-center justify-center text-center">
+                        <div class="relative w-40 h-40 mb-5">
+                          <!-- orbital rings -->
+                          <div class="absolute inset-0 rounded-full border border-slate-200/90"></div>
+                          <div class="absolute inset-4 rounded-full border border-slate-200/70"></div>
+                          <div class="absolute inset-8 rounded-full border border-slate-200/60"></div>
+                          <div class="absolute inset-12 rounded-full border border-slate-200/50"></div>
+                          <!-- orbiting dot -->
+                          <div class="orbit-dot absolute inset-0">
+                            <span class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-emerald-400 shadow-md shadow-emerald-200"></span>
+                          </div>
+                          <!-- center hub -->
+                          <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 rounded-full bg-white shadow-md"></div>
+                          </div>
+                        </div>
+                        <div class="text-[11px] tracking-[0.25em] text-slate-400 uppercase font-semibold mb-1.5">DRAWN FILE</div>
+                        <div id="card-title" class="text-[1.35rem] sm:text-2xl font-bold text-slate-900 whitespace-nowrap">Prompt 工程</div>
+                      </div>
+                      <div class="text-right text-xs text-slate-400">点击翻面查看 <i class="fa-solid fa-arrow-rotate-right"></i></div>
+                    </div>
+                    <!-- Back -->
+                    <div class="flip-card-face flip-card-back rounded-[2rem] p-7 bg-slate-900 text-white shadow-xl flex flex-col">
+                      <div class="text-[11px] tracking-[0.2em] text-white/50 uppercase font-semibold" id="card-back-cat">AI 技能</div>
+                      <h3 id="card-back-title" class="text-xl font-bold mt-2 mb-4">Prompt 工程</h3>
+                      <p id="card-desc" class="text-sm text-white/75 leading-relaxed flex-1"></p>
+                      <div id="card-tags" class="flex flex-wrap gap-2 mt-4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5 text-sm font-bold text-slate-400 tracking-[0.3em]"><span id="card-index" class="text-slate-700">01</span> / <span>05</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-12 text-center">生活之外的我</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- 美食 -->
+          <div class="glass-card rounded-[2rem] overflow-hidden shadow-lg group hover:-translate-y-1 transition-transform duration-300">
+            <div class="relative h-56 sm:h-60 cursor-pointer" onclick="openGallery('food')">
+              <div class="absolute inset-x-5 inset-y-4 rotate-[7deg] translate-x-3.5 -translate-y-1 rounded-xl shadow-md overflow-hidden opacity-90 group-hover:rotate-[10deg] group-hover:translate-x-5 transition-transform duration-500">
+                <img src="images/hobby-food-3.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rotate-[-6deg] -translate-x-3.5 translate-y-1 rounded-xl shadow-md overflow-hidden group-hover:rotate-[-9deg] group-hover:-translate-x-5 transition-transform duration-500">
+                <img src="images/hobby-food-2.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rounded-xl shadow-lg overflow-hidden group-hover:-translate-y-1 transition-transform duration-500">
+                <img src="images/hobby-food.jpg" alt="热爱美食" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rounded-xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 py-2 rounded-full bg-white/95 text-slate-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                  <i class="fa-solid fa-images"></i> 展开 4 张
+                </span>
+              </div>
+            </div>
+            <div class="p-5">
+              <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-utensils text-orange-500"></i> 热爱美食
+              </h4>
+              <p class="text-xs text-slate-600 mt-2">喜欢探店，对味道与视觉都有要求</p>
+            </div>
+          </div>
+
+          <!-- 运动 -->
+          <div class="glass-card rounded-[2rem] overflow-hidden shadow-lg group hover:-translate-y-1 transition-transform duration-300">
+            <div class="relative h-56 sm:h-60 cursor-pointer" onclick="openGallery('sports')">
+              <div class="absolute inset-x-5 inset-y-4 rotate-[-6deg] -translate-x-3.5 translate-y-1 rounded-xl shadow-md overflow-hidden group-hover:rotate-[-9deg] group-hover:-translate-x-5 transition-transform duration-500">
+                <img src="images/hobby-sports-2.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rounded-xl shadow-lg overflow-hidden group-hover:-translate-y-1 transition-transform duration-500">
+                <img src="images/hobby-sports.jpg" alt="热爱运动" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rounded-xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 py-2 rounded-full bg-white/95 text-slate-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                  <i class="fa-solid fa-images"></i> 展开 2 张
+                </span>
+              </div>
+            </div>
+            <div class="p-5">
+              <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-person-skating text-blue-500"></i> 热爱运动
+              </h4>
+              <p class="text-xs text-slate-600 mt-2">滑冰等运动，保持活力与平衡</p>
+            </div>
+          </div>
+
+          <!-- 旅游 -->
+          <div class="glass-card rounded-[2rem] overflow-hidden shadow-lg group hover:-translate-y-1 transition-transform duration-300">
+            <div class="relative h-56 sm:h-60 cursor-pointer" onclick="openGallery('travel')">
+              <div class="absolute inset-x-5 inset-y-4 rotate-[7deg] translate-x-3.5 -translate-y-1 rounded-xl shadow-md overflow-hidden opacity-90 group-hover:rotate-[10deg] group-hover:translate-x-5 transition-transform duration-500">
+                <img src="images/hobby-travel-2.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rotate-[-6deg] -translate-x-3.5 translate-y-1 rounded-xl shadow-md overflow-hidden group-hover:rotate-[-9deg] group-hover:-translate-x-5 transition-transform duration-500">
+                <img src="images/hobby-travel.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rounded-xl shadow-lg overflow-hidden group-hover:-translate-y-1 transition-transform duration-500">
+                <img src="images/hobby-travel-4.jpg" alt="热爱旅游" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rounded-xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 py-2 rounded-full bg-white/95 text-slate-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                  <i class="fa-solid fa-images"></i> 展开 4 张
+                </span>
+              </div>
+            </div>
+            <div class="p-5">
+              <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-plane text-emerald-500"></i> 热爱旅游
+              </h4>
+              <p class="text-xs text-slate-600 mt-2">用脚步丈量城市，用镜头记录风景</p>
+            </div>
+          </div>
+
+          <!-- 艺术 -->
+          <div class="glass-card rounded-[2rem] overflow-hidden shadow-lg group hover:-translate-y-1 transition-transform duration-300">
+            <div class="relative h-56 sm:h-60 cursor-pointer" onclick="openGallery('art')">
+              <div class="absolute inset-x-5 inset-y-4 rotate-[7deg] translate-x-3.5 -translate-y-1 rounded-xl shadow-md overflow-hidden opacity-90 group-hover:rotate-[10deg] group-hover:translate-x-5 transition-transform duration-500">
+                <img src="images/hobby-art-2.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rotate-[-6deg] -translate-x-3.5 translate-y-1 rounded-xl shadow-md overflow-hidden group-hover:rotate-[-9deg] group-hover:-translate-x-5 transition-transform duration-500">
+                <img src="images/hobby-art.jpg" alt="" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rounded-xl shadow-lg overflow-hidden group-hover:-translate-y-1 transition-transform duration-500">
+                <img src="images/hobby-art-4.jpg" alt="艺术爱好" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute inset-x-5 inset-y-4 rounded-xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
+                <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 py-2 rounded-full bg-white/95 text-slate-800 text-xs font-bold shadow-lg flex items-center gap-1.5">
+                  <i class="fa-solid fa-images"></i> 展开 4 张
+                </span>
+              </div>
+            </div>
+            <div class="p-5">
+              <h4 class="font-bold text-slate-900 flex items-center gap-2">
+                <i class="fa-solid fa-masks-theater text-purple-500"></i> 艺术爱好
+              </h4>
+              <p class="text-xs text-slate-600 mt-2">芭蕾、戏剧等，丰富审美体验</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <div class="text-sm font-semibold tracking-widest text-blue-600 uppercase mb-3">06 / CONTACT</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">联系我</h2>
+        </div>
+
+        <div class="glass-card rounded-[2.5rem] p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-blue-200/30 to-purple-200/30 rounded-full blur-3xl -mr-20 -mt-20"></div>
+          <div class="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-pink-200/30 to-blue-200/30 rounded-full blur-3xl -ml-20 -mb-20"></div>
+
+          <div class="relative z-10">
+            <p class="text-center text-slate-600 mb-10 text-lg">
+              如果你对我的经历感兴趣，或有 AI 产品、Agent 设计相关的话题想交流，欢迎随时联系我。
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-10">
+              <a href="tel:15839623812" class="flex items-center gap-4 p-5 rounded-2xl bg-white/50 border border-white/60 hover:bg-white/70 transition-colors group">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-blue-700 group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500">电话</div>
+                  <div class="font-semibold text-slate-900">15839623812</div>
+                </div>
+              </a>
+
+              <div onclick="copyEmail()" title="点击复制邮箱" class="flex items-center gap-4 p-5 rounded-2xl bg-white/50 border border-white/60 hover:bg-white/70 transition-colors group cursor-pointer select-none">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-purple-700 group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="text-xs text-slate-500">邮箱</div>
+                  <div class="font-semibold text-slate-900 text-sm">Zhang15839623812@163.com</div>
+                </div>
+                <i class="fa-regular fa-copy text-slate-300 group-hover:text-purple-400 transition-colors"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Gallery Lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center">
+    <div class="absolute inset-0 bg-slate-900/85 backdrop-blur-sm" onclick="closeGallery()"></div>
+    <button onclick="closeGallery()" aria-label="关闭" class="absolute top-5 right-5 z-10 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors">
+      <i class="fa-solid fa-xmark text-lg"></i>
+    </button>
+    <button onclick="prevImage(event)" aria-label="上一张" class="absolute left-3 sm:left-8 z-10 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button onclick="nextImage(event)" aria-label="下一张" class="absolute right-3 sm:right-8 z-10 w-11 h-11 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <div class="relative z-[5] max-w-4xl w-full mx-4 flex flex-col items-center pointer-events-none">
+      <div id="lightbox-title" class="mb-4 px-4 py-1.5 rounded-full bg-white/10 text-white/90 text-xs font-semibold tracking-widest uppercase"></div>
+      <img id="lightbox-img" src="" alt="" class="max-h-[72vh] w-auto max-w-full rounded-2xl shadow-2xl object-contain pointer-events-auto">
+      <div id="lightbox-counter" class="mt-4 px-4 py-1.5 rounded-full bg-white/10 text-white text-sm font-medium"></div>
+    </div>
+  </div>
+
+  <!-- Copy Toast -->
+  <div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 z-[110] px-5 py-2.5 rounded-full bg-slate-900 text-white text-sm font-medium shadow-xl opacity-0 translate-y-2 pointer-events-none transition-all duration-300">
+    <i class="fa-solid fa-check text-emerald-400 mr-2"></i>邮箱已复制到剪贴板
+  </div>
+
+  <!-- Scroll Hint -->
+  <div id="scroll-hint" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-1.5 text-slate-400 transition-all duration-500 pointer-events-none">
+    <span class="text-[11px] font-medium tracking-[0.2em]">继续下滑 · 探索更多</span>
+    <i class="fa-solid fa-chevron-down text-xs animate-bounce"></i>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-8 px-4 text-center">
+    <p class="text-sm text-slate-500">
+      © 2026 张天赐 Portfolio. Designed with AI & vibe coding.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
