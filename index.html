@@ -11,7 +11,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-</head>
+<script src="https://beacon.cdn.qq.com/sdk/4.5.9/beacon_web.min.js"></script>
+<script>
+(function(){
+  try{
+    var beacon=new BeaconAction({
+      appkey:'0WEB06U85YBSLJNL',
+      versionCode:'1.0.0',
+      channelID:'share',
+      delay:1000,
+      sessionDuration:30*60*1000,
+      isOversea:false,
+      needReportRqdEvent:false
+    });
+    beacon.onDirectUserAction('preview_page_view',{
+      'url':location.href,
+      'referrer':document.referrer,
+      'title':document.title,
+      'sandbox_id':'d271c4c4088348f0baaf12b00ff8e13f'
+    });
+  }catch(e){}
+})();
+</script></head>
 <body class="antialiased text-slate-800">
   <!-- Mesh Gradient Background -->
   <div class="mesh-bg fixed inset-0 -z-10"></div>
@@ -273,7 +294,7 @@
                     <h3 class="text-xl font-bold text-slate-900">京东</h3>
                     <span class="text-sm font-semibold text-slate-500">产品经理</span>
                     <span class="text-sm text-slate-400">·</span>
-                    <span class="text-sm text-slate-500">金融科技事业群</span>
+                    <span class="text-sm font-semibold text-slate-500">金融科技事业群</span>
                   </div>
                   <span class="shrink-0 px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-xs font-bold">2025.11 - 2026.06</span>
                 </div>
@@ -338,7 +359,7 @@
                     <h3 class="text-xl font-bold text-slate-900">百度</h3>
                     <span class="text-sm font-semibold text-slate-500 whitespace-nowrap">AI 产品经理</span>
                     <span class="text-sm text-slate-400">·</span>
-                    <span class="text-xs text-slate-500 whitespace-nowrap">智能云千帆大模型平台</span>
+                    <span class="text-sm font-semibold text-slate-500 whitespace-nowrap">智能云千帆大模型平台</span>
                   </div>
                   <span class="shrink-0 px-2.5 py-1 rounded-full bg-blue-100 text-blue-700 text-[11px] font-bold whitespace-nowrap">2025.06 - 2025.11</span>
                 </div>
