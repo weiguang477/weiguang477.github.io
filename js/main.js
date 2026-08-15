@@ -133,46 +133,54 @@ const galleries = {
   jd: {
     title: '京东 · FIELD NOTES',
     images: [
-      'images/work-jd-recognition.jpg',
-      'images/work-jd-award.jpg',
-      'images/work-jd-team.jpg'
+      'images/work-jd-recognition.jpg?v=3',
+      'images/work-jd-award.jpg?v=3',
+      'images/work-jd-team.jpg?v=3'
     ]
   },
   baidu: {
-    title: '百度 · FIELD NOTES',
+    title: '百度 · 千帆 · FIELD NOTES',
     images: [
-      'images/work-baidu-badge.jpg',
-      'images/work-baidu-conference.jpg',
-      'images/work-baidu-presentation.jpg'
+      'images/work-baidu-badge.jpg?v=3',
+      'images/work-baidu-conference.jpg?v=3',
+      'images/work-baidu-presentation.jpg?v=3'
+    ]
+  },
+  baidu2: {
+    title: '百度 · 文心 · FIELD NOTES',
+    images: [
+      'images/work-baidu-conference.jpg?v=3',
+      'images/work-baidu-badge.jpg?v=3',
+      'images/work-baidu-presentation.jpg?v=3'
     ]
   },
   offeryo: {
     title: 'OfferYo · 界面预览',
     images: [
-      'images/project-offeryo-home.jpg',
-      'images/project-offeryo-list.jpg',
-      'images/project-offeryo-detail.jpg',
-      'images/project-offeryo-form.jpg',
-      'images/project-offeryo-calendar.jpg',
-      'images/project-offeryo-community.jpg',
-      'images/project-offeryo-profile.jpg'
+      'images/project-offeryo-home.jpg?v=3',
+      'images/project-offeryo-list.jpg?v=3',
+      'images/project-offeryo-detail.jpg?v=3',
+      'images/project-offeryo-form.jpg?v=3',
+      'images/project-offeryo-calendar.jpg?v=3',
+      'images/project-offeryo-community.jpg?v=3',
+      'images/project-offeryo-profile.jpg?v=3'
     ]
   },
   food: {
     title: '热爱美食',
-    images: ['images/hobby-food.jpg', 'images/hobby-food-2.jpg', 'images/hobby-food-3.jpg', 'images/hobby-food-4.jpg']
+    images: ['images/hobby-food.jpg?v=3', 'images/hobby-food-2.jpg?v=3', 'images/hobby-food-3.jpg?v=3', 'images/hobby-food-4.jpg?v=3']
   },
   sports: {
     title: '热爱运动',
-    images: ['images/hobby-sports.jpg', 'images/hobby-sports-2.jpg']
+    images: ['images/hobby-sports.jpg?v=3', 'images/hobby-sports-2.jpg?v=3']
   },
   travel: {
     title: '热爱旅游',
-    images: ['images/hobby-travel-4.jpg', 'images/hobby-travel.jpg', 'images/hobby-travel-2.jpg', 'images/hobby-travel-3.jpg']
+    images: ['images/hobby-travel-4.jpg?v=3', 'images/hobby-travel.jpg?v=3', 'images/hobby-travel-2.jpg?v=3', 'images/hobby-travel-3.jpg?v=3']
   },
   art: {
     title: '艺术爱好',
-    images: ['images/hobby-art-4.jpg', 'images/hobby-art.jpg', 'images/hobby-art-2.jpg', 'images/hobby-art-3.jpg']
+    images: ['images/hobby-art-4.jpg?v=3', 'images/hobby-art.jpg?v=3', 'images/hobby-art-2.jpg?v=3', 'images/hobby-art-3.jpg?v=3']
   }
 };
 
