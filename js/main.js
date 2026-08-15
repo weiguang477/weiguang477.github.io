@@ -264,6 +264,12 @@ const skillCards = [
   },
   {
     cat: 'AI NATIVE', type: '技能', backCat: 'AI 技能',
+    title: '意图识别', icon: 'fa-bullseye', grad: 'from-amber-500 to-orange-600',
+    desc: '参与重构"业务域→用户目标→具体问题"三级意图类目树，搭建"Embedding 候选粗召回+大模型精分类"两阶段识别链路，推动意图识别准确率由 72% 提升至 89%。',
+    tags: ['意图类目树', 'Query 改写', '两阶段召回']
+  },
+  {
+    cat: 'AI NATIVE', type: '技能', backCat: 'AI 技能',
     title: '记忆管理', icon: 'fa-brain', grad: 'from-violet-500 to-purple-600',
     desc: '了解记忆分层设计的框架与主要技术，如滑动窗口、对话摘要、记忆向量化等。',
     tags: ['滑动窗口', '对话摘要', '记忆向量化']
