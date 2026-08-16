@@ -278,6 +278,8 @@ const skillCards = [
 // 动态同步牌库数量显示，避免增减卡片时遗漏手动更新
 const deckCountEl = document.getElementById('deck-count');
 if (deckCountEl) deckCountEl.textContent = skillCards.length;
+const cardTotalEl = document.getElementById('card-total');
+if (cardTotalEl) cardTotalEl.textContent = String(skillCards.length).padStart(2, '0');
 
 let currentCardIndex = 0;
 let isDrawing = false;
