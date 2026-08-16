@@ -270,68 +270,7 @@
           <!-- Left line (mobile) -->
           <div class="md:hidden absolute left-7 top-2 bottom-2 w-0.5 bg-gradient-to-b from-blue-300 via-indigo-300 to-purple-300 rounded-full"></div>
 
-          <!-- Item 1: 百度·文心智能体平台 -->
-          <div class="relative mb-12 md:mb-16">
-            <!-- Timeline node -->
-            <div class="absolute left-7 md:left-1/2 -translate-x-1/2 top-6 md:top-1/2 md:-translate-y-1/2 z-10">
-              <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white shadow-xl ring-4 ring-white/80 overflow-hidden flex items-center justify-center p-1">
-                <img src="images/logo-baidu-paw.jpg" alt="百度" class="w-full h-full object-contain">
-              </div>
-            </div>
-
-            <div class="md:grid md:grid-cols-[1fr_1.12fr] md:gap-16 items-center">
-              <!-- Text card (left on desktop) -->
-              <div class="ml-20 md:ml-0 glass-card rounded-[2rem] p-6 sm:p-8 shadow-xl">
-                <div class="flex items-center gap-2.5 sm:gap-3 mb-4 flex-wrap lg:flex-nowrap">
-                  <div class="w-12 h-12 shrink-0 rounded-full bg-white shadow-lg overflow-hidden flex items-center justify-center p-1">
-                    <img src="images/logo-baidu-paw.jpg" alt="百度" class="w-full h-full object-cover">
-                  </div>
-                  <div class="flex-1 min-w-0 flex items-baseline gap-1.5 flex-wrap lg:flex-nowrap">
-                    <h3 class="text-xl font-bold text-slate-900">百度</h3>
-                    <span class="text-sm font-semibold text-slate-500 whitespace-nowrap">AI 产品经理</span>
-                    <span class="text-sm text-slate-400">·</span>
-                    <span class="text-sm font-semibold text-slate-500 whitespace-nowrap">文心智能体平台</span>
-                  </div>
-                  <span class="shrink-0 px-2.5 py-1 rounded-full bg-blue-100 text-blue-700 text-[11px] font-bold whitespace-nowrap">2024.12 - 2025.04</span>
-                </div>
-                <p class="text-sm text-slate-700 leading-relaxed mb-5">
-                  深度参与智能客服 Agent 意图理解与图文 RAG 能力建设。
-                </p>
-                <div class="space-y-3">
-                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
-                    <span class="w-8 h-8 shrink-0 rounded-lg bg-indigo-100 flex items-center justify-center text-indigo-700 text-xs"><i class="fa-solid fa-bullseye"></i></span>
-                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">意图识别调优：</strong>针对客服 Agent 意图边界模糊、上下文依赖问题识别不准等痛点，参与重构"业务域→用户目标→具体问题"三级意图类目树，完善意图定义、必要条件与混淆边界；并引入 Query 改写与上下文补全，搭建"Embedding 候选粗召回+大模型精分类"两阶段识别链路，推动意图识别准确率由 72% 提升至 89%。</div>
-                  </div>
-                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
-                    <span class="w-8 h-8 shrink-0 rounded-lg bg-cyan-100 flex items-center justify-center text-cyan-700 text-xs"><i class="fa-solid fa-image"></i></span>
-                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">图文 RAG 建设：</strong>针对纯文本知识库难以处理操作截图及 PDF 图文分离的问题，参与构建"文档解析→图片提取→多模态描述→统一索引→原图回填"链路；结合图号引用、章节结构与语义匹配建立跨页图文关联，并通过关键词、向量召回与 Reranker 优化检索排序，最终实现图文问题 Agent 解决率达 86%。</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Photo stack (right on desktop) -->
-              <div class="ml-20 md:ml-0 mt-8 md:mt-0">
-                <div class="relative h-72 sm:h-80 cursor-pointer group" onclick="openGallery('baidu2')">
-                  <div class="absolute inset-x-3 inset-y-0 rotate-[-7deg] -translate-x-4 -translate-y-1.5 rounded-2xl shadow-lg overflow-hidden opacity-90 group-hover:rotate-[-10deg] group-hover:-translate-x-6 transition-transform duration-500">
-                    <img src="images/work-baidu-conference.jpg?v=3" alt="Agent 应用花园" class="w-full h-full object-cover">
-                  </div>
-                  <div class="absolute inset-x-3 inset-y-0 rotate-[6deg] translate-x-4 translate-y-1.5 rounded-2xl shadow-lg overflow-hidden group-hover:rotate-[9deg] group-hover:translate-x-6 transition-transform duration-500">
-                    <img src="images/work-baidu-badge.jpg?v=3" alt="百度云智大会参会证" class="w-full h-full object-cover">
-                  </div>
-                  <div class="absolute inset-x-3 inset-y-0 rounded-2xl shadow-xl overflow-hidden group-hover:-translate-y-1.5 transition-transform duration-500">
-                    <img src="images/work-baidu-presentation.jpg?v=3" alt="秒哒时间大联播" class="w-full h-full object-cover">
-                  </div>
-                  <div class="absolute inset-x-3 inset-y-0 rounded-2xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
-                    <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 py-2.5 rounded-full bg-white/95 text-slate-800 text-sm font-bold shadow-lg flex items-center gap-2">
-                      <i class="fa-solid fa-images"></i> 展开 3 张
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 2: 百度·智能云千帆大模型平台 -->
+          <!-- Item 1: 京东 -->
           <div class="relative mb-12 md:mb-16">
             <!-- Timeline node -->
             <div class="absolute left-7 md:left-1/2 -translate-x-1/2 top-6 md:top-1/2 md:-translate-y-1/2 z-10">
@@ -396,7 +335,7 @@
             </div>
           </div>
 
-          <!-- Item 3: 京东 -->
+          <!-- Item 2: 百度·智能云千帆大模型平台 -->
           <div class="relative">
             <!-- Timeline node -->
             <div class="absolute left-7 md:left-1/2 -translate-x-1/2 top-6 md:top-1/2 md:-translate-y-1/2 z-10">
@@ -458,6 +397,64 @@
                   <div class="absolute inset-x-3 inset-y-0 rounded-2xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
                     <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 py-2.5 rounded-full bg-white/95 text-slate-800 text-sm font-bold shadow-lg flex items-center gap-2">
                       <i class="fa-solid fa-images"></i> 展开 3 张
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: 百度·文心智能体平台 -->
+          <div class="relative">
+            <!-- Timeline node -->
+            <div class="absolute left-7 md:left-1/2 -translate-x-1/2 top-6 md:top-1/2 md:-translate-y-1/2 z-10">
+              <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white shadow-xl ring-4 ring-white/80 overflow-hidden flex items-center justify-center p-1">
+                <img src="images/logo-baidu-paw.jpg" alt="百度" class="w-full h-full object-contain">
+              </div>
+            </div>
+
+            <div class="md:grid md:grid-cols-2 md:gap-16 lg:gap-20 items-center">
+              <!-- Text card (left on desktop) -->
+              <div class="ml-20 md:ml-0 glass-card rounded-[2rem] p-6 sm:p-8 shadow-xl">
+                <div class="flex items-center gap-3 sm:gap-4 mb-4 flex-wrap">
+                  <div class="w-12 h-12 shrink-0 rounded-xl bg-white shadow-lg overflow-hidden flex items-center justify-center p-1">
+                    <img src="images/logo-baidu-paw.jpg" alt="百度" class="w-full h-full object-contain">
+                  </div>
+                  <div class="flex-1 min-w-0 flex items-baseline gap-2 flex-wrap">
+                    <h3 class="text-xl font-bold text-slate-900">百度</h3>
+                    <span class="text-sm font-semibold text-slate-500">AI 产品经理</span>
+                    <span class="text-sm text-slate-400">·</span>
+                    <span class="text-sm font-semibold text-slate-500">文心智能体平台</span>
+                  </div>
+                  <span class="shrink-0 px-3 py-1.5 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold">2024.12 - 2025.04</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed mb-5">
+                  深度参与智能客服 Agent 意图理解与图文 RAG 能力建设。
+                </p>
+                <div class="space-y-3">
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-indigo-100 flex items-center justify-center text-indigo-700 text-xs"><i class="fa-solid fa-bullseye"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">意图识别调优：</strong>重构三级意图类目树 + 两阶段识别链路，准确率 72% → 89%</div>
+                  </div>
+                  <div class="flex gap-3 p-3.5 rounded-xl bg-white/50 border border-white/60">
+                    <span class="w-8 h-8 shrink-0 rounded-lg bg-cyan-100 flex items-center justify-center text-cyan-700 text-xs"><i class="fa-solid fa-image"></i></span>
+                    <div class="text-xs sm:text-sm text-slate-700 leading-relaxed"><strong class="text-slate-900">图文 RAG 建设：</strong>构建图文统一索引链路，图文问题 Agent 解决率 86%</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Photo stack (right on desktop) -->
+              <div class="ml-20 md:ml-0 mt-8 md:mt-0">
+                <div class="relative h-72 sm:h-80 cursor-pointer group" onclick="openGallery('baidu2')">
+                  <div class="absolute inset-x-3 inset-y-0 rotate-[-7deg] -translate-x-4 -translate-y-1.5 rounded-2xl shadow-lg overflow-hidden opacity-90 group-hover:rotate-[-10deg] group-hover:-translate-x-6 transition-transform duration-500">
+                    <img src="images/work-wenxin-2.jpg?v=3" alt="文心智能体平台工作记录" class="w-full h-full object-cover">
+                  </div>
+                  <div class="absolute inset-x-3 inset-y-0 rotate-[6deg] translate-x-4 translate-y-1.5 rounded-2xl shadow-lg overflow-hidden group-hover:rotate-[9deg] group-hover:translate-x-6 transition-transform duration-500">
+                    <img src="images/work-wenxin-1.jpg?v=3" alt="文心智能体平台工作记录" class="w-full h-full object-cover">
+                  </div>
+                  <div class="absolute inset-x-3 inset-y-0 rounded-2xl flex items-center justify-center bg-slate-900/0 group-hover:bg-slate-900/25 transition-colors duration-300">
+                    <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 py-2.5 rounded-full bg-white/95 text-slate-800 text-sm font-bold shadow-lg flex items-center gap-2">
+                      <i class="fa-solid fa-images"></i> 展开 2 张
                     </span>
                   </div>
                 </div>

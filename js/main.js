@@ -149,9 +149,8 @@ const galleries = {
   baidu2: {
     title: '百度 · 文心 · FIELD NOTES',
     images: [
-      'images/work-baidu-conference.jpg?v=3',
-      'images/work-baidu-badge.jpg?v=3',
-      'images/work-baidu-presentation.jpg?v=3'
+      'images/work-wenxin-1.jpg?v=3',
+      'images/work-wenxin-2.jpg?v=3'
     ]
   },
   offeryo: {
