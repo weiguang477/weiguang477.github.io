@@ -258,8 +258,8 @@ const skillCards = [
   {
     cat: 'AI NATIVE', type: '技能', backCat: 'AI 技能',
     title: '知识库建设', icon: 'fa-database', grad: 'from-cyan-500 to-teal-600',
-    desc: '熟悉知识库构建与 RAG 落地链路、知识图谱，从文档切分、向量化到召回调优，让大模型基于私有知识稳定作答。',
-    tags: ['RAG', '知识图谱', '召回调优']
+    desc: '针对纯文本知识库难以处理操作截图及 PDF 图文分离的问题，参与构建“文档解析→图片提取→多模态描述→统一索引→原图回填”链路；结合图号引用、章节结构与语义匹配建立跨页图文关联，并通过关键词、向量召回与 Reranker 优化检索排序，最终实现图文问题 Agent 解决率达 86%。',
+    tags: ['图文 RAG', '统一索引', 'Reranker 调优']
   },
   {
     cat: 'AI NATIVE', type: '技能', backCat: 'AI 技能',
